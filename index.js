@@ -12,7 +12,6 @@
 import fs from 'fs';
 import inquirer from 'inquirer';
 
-// Array of questions for user input
 const questions = [
   {
     type: 'input',
@@ -72,7 +71,6 @@ const questions = [
   },
 ];
 
-// Function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (err) {
@@ -83,7 +81,6 @@ function writeToFile(fileName, data) {
   });
 }
 
-// Function to generate markdown for README
 function generateMarkdown(data) {
     const licenseBadge = data.license !== 'None' ? `![License](https://img.shields.io/badge/License-${data.license}-blue.svg)` : '';
     const licenseNotice = data.license !== 'None' ? `This project is licensed under the ${data.license} license.` : 'No license selected.';
@@ -130,7 +127,6 @@ function generateMarkdown(data) {
   `;
   }
   
-  // Function to initialize app
   function init() {
     inquirer.prompt(questions).then((answers) => {
       const markdown = generateMarkdown(answers);
@@ -138,5 +134,4 @@ function generateMarkdown(data) {
     });
   }
   
-  // Function call to initialize app
   init();
