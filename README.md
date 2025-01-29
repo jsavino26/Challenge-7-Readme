@@ -19,8 +19,11 @@
 
 ## Screenshots
 ![Prompt Screenshot 1](utils/nmpScreenshot.jpg)
-![Prompt Screenshot 2](utils/nodeCommand.jpg)
-![Prompt Screenshot 3](utils/openTerminal.jpg)
+
+![Prompt Screenshot 2](utils/openTerminal.jpg)
+
+![Prompt Screenshot 3](utils/nodeCommand.jpg)
+
 ![Prompt Screenshot 4](utils/promptAppears.jpg)
   
   ## Installation
