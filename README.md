@@ -18,8 +18,10 @@
 [Watch the walkthrough video](link-to-your-video)
 
 ## Screenshots
-![Prompt Screenshot](path-to-screenshot.png)
-![Generated README Screenshot](path-to-screenshot.png)
+![Prompt Screenshot 1](utils/nmpScreenshot.jpg)
+![Prompt Screenshot 2](utils/nodeCommand.jpg)
+![Prompt Screenshot 3](utils/openTerminal.jpg)
+![Prompt Screenshot 4](utils/promptAppears.jpg)
   
   ## Installation
   To be used in conjunction with inquirer package. Down load inquirer package and clone the reposity: git clone https://github.com/your-username/readme-generator.git. 
@@ -37,7 +39,7 @@
   This product features only javascript, index files, nodes, and inquirer	
   
   ## Tests
-  undefined
+  You can test the index.js file when you open the integrated terminal and type the command: node index.js. The program is functioning if you are prompted to answer questions for creating the readme file. 
   
   ## Questions
   If you have any questions, please feel free to contact me:
