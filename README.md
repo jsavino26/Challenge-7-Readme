@@ -3,7 +3,7 @@
   
   
   ## Description
-  This product is a program that generates a README file
+  This command-line application dynamically generates a professional README.md file from a user's input using the Inquirer package
   
   ## Table of Contents
   - [Installation](#installation)
@@ -13,9 +13,16 @@
   - [Features](#features)
   - [Tests](#tests)
   - [Questions](#questions)
+
+  ## Walkthrough Video
+[Watch the walkthrough video](link-to-your-video)
+
+## Screenshots
+![Prompt Screenshot](path-to-screenshot.png)
+![Generated README Screenshot](path-to-screenshot.png)
   
   ## Installation
-  To be used in conjunction with inquirer package
+  To be used in conjunction with inquirer package. Down load inquirer package and clone the reposity: git clone https://github.com/your-username/readme-generator.git. 
   
   ## Usage
   You can use this product to automatically generate a README file for all your programming projects 
