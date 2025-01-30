@@ -11,6 +11,7 @@
 
 import fs from 'fs';
 import inquirer from 'inquirer';
+import generateMarkdown from './utils/generateMarkdown.js';
 
 const questions = [
   {
@@ -81,52 +82,6 @@ function writeToFile(fileName, data) {
   });
 }
 
-function generateMarkdown(data) {
-    const licenseBadge = data.license !== 'None' ? `![License](https://img.shields.io/badge/License-${data.license}-blue.svg)` : '';
-    const licenseNotice = data.license !== 'None' ? `This project is licensed under the ${data.license} license.` : 'No license selected.';
-  
-    return `
-  # ${data.title}
-  ${licenseBadge}
-  
-  ## Description
-  ${data.description}
-  
-  ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [License](#license)
-  - [Features](#features)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  
-  ## Installation
-  ${data.installation}
-  
-  ## Usage
-  ${data.usage}
-  
-  ## Credits
-  ${data.credits}
-  
-  ## License
-  ${licenseNotice}
-  
-  ## Features
-  ${data.features}
-  
-  ## Tests
-  ${data.tests}
-  
-  ## Questions
-  If you have any questions, please feel free to contact me:
-  
-  - GitHub: [${data.github}](https://github.com/${data.github})
-  - Email: ${data.email}
-  `;
-  }
-  
   function init() {
     inquirer.prompt(questions).then((answers) => {
       const markdown = generateMarkdown(answers);
