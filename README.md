@@ -27,7 +27,7 @@
 ![Prompt Screenshot 4](utils/promptAppears.jpg)
   
   ## Installation
-  To be used in conjunction with inquirer package. Down load inquirer package and clone the reposity: git clone https://github.com/your-username/readme-generator.git. 
+  To be used in conjunction with inquirer package. Download inquirer package and clone the reposity: git clone https://github.com/your-username/readme-generator.git. 
   
   ## Usage
   You can use this product to automatically generate a README file for all your programming projects 
